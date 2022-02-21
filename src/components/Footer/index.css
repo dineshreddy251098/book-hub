@@ -1,0 +1,24 @@
+.contact-us-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  width: 100%;
+  background-color: #f5f7fa;
+}
+
+.contact-us-icons {
+  height: 21px;
+  width: 18px;
+  margin: 12px;
+}
+.contact-us-heading {
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3d3c3c;
+  margin: 0px;
+}
