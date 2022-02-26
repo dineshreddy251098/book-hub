@@ -10,6 +10,7 @@
 @media screen and (min-width: 768px) {
   .website-login-image-container-lg {
     display: flex;
+    flex-grow: 1;
   }
 }
 .website-login-image-lg {

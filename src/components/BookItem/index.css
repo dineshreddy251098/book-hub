@@ -9,7 +9,7 @@
   }
 }
 .book-item-cover-pic {
-  width: 133px;
+  min-width: 133px;
   height: 155px;
   border-radius: 8px;
 }

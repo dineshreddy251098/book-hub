@@ -210,12 +210,11 @@ class Bookshelves extends Component {
                   )
                 }
                 return (
-                  <li className="active-filter-list-lg" key={eachItem.id}>
+                  <li className="active-filter-list-lg" key={eachItem.label}>
                     <button
                       className={`active-filter-btn-lg ${activeFilterClass}`}
                       onClick={onClickedFilter}
                       type="button"
-                      value={eachItem.value}
                     >
                       {eachItem.label}
                     </button>
@@ -268,8 +267,7 @@ class Bookshelves extends Component {
                   <button
                     className={`Bookshelves-filter-btn ${activeFilterClass}`}
                     type="button"
-                    key={eachItem.id}
-                    value={eachItem.value}
+                    key={eachItem.label}
                     onClick={onClickedFilter}
                   >
                     {eachItem.label}

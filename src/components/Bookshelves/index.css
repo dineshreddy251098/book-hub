@@ -141,7 +141,11 @@
 .filtered-books-search-input-container-lg {
   display: flex;
   align-items: center;
-  width: 800px;
+}
+@media screen and (min-width: 768px) {
+  .filtered-books-search-input-container-lg {
+    width: 800px;
+  }
 }
 .active-filter-list-lg {
   list-style-type: none;

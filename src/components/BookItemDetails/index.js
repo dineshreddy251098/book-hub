@@ -117,7 +117,7 @@ class BookItemDetails extends Component {
               <p className="book-details-rating ">{rating}</p>
             </div>
             <p className="book-details-status-heading">
-              Status: <span className="book-details-status">{readStatus}</span>
+              Status: <p className="book-details-status">{readStatus}</p>
             </p>
           </div>
         </div>
