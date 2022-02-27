@@ -85,3 +85,19 @@
 .book-item-status {
   color: #0284c7;
 }
+.favorite-input {
+  display: none;
+}
+.favorite-container {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+.favorite-icon {
+  margin-left: 10px;
+  opacity: 0.5;
+}
+.favorite-icon-selected {
+  margin-left: 10px;
+  color: red;
+}

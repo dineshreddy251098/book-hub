@@ -29,9 +29,10 @@ class Header extends Component {
   }
 
   render() {
-    const {home, shelves} = this.props
+    const {home, shelves, favorite} = this.props
     const activeHome = home ? 'active-tab' : ''
     const activeShelves = shelves ? 'active-tab' : ''
+    const activeFavorite = favorite ? 'active-tab' : ''
     const {displayNavbar} = this.state
 
     return (
@@ -53,6 +54,11 @@ class Header extends Component {
             <Link className="link" to="/shelf">
               <li className={`list-item bookshelves-tab ${activeShelves}`}>
                 Bookshelves
+              </li>
+            </Link>
+            <Link className="link" to="/favorite">
+              <li className={`list-item bookshelves-tab ${activeFavorite}`}>
+                MyFavorites
               </li>
             </Link>
             <li className="list-item">
@@ -82,30 +88,39 @@ class Header extends Component {
             </button>
           </div>
           {displayNavbar && (
-            <div className="header-navbar-tabs-container">
-              <Link className="link" to="/">
-                <h1 className={`home-tab ${activeHome}`}>Home</h1>
-              </Link>
-              <Link className="link" to="/shelf">
-                <h1 className={`bookshelves-tab ${activeShelves}`}>
-                  Bookshelves
-                </h1>
-              </Link>
-              <button
-                onClick={this.onClickLogout}
-                className="logout-btn"
-                type="button"
-              >
-                Logout
-              </button>
-              <button
-                onClick={this.onClickCross}
-                className="cross-icon-btn"
-                type="button"
-              >
-                <RiCloseCircleFill className="cross-icon" />
-              </button>
-            </div>
+            <>
+              <div className="header-navbar-tabs-container">
+                <Link className="link" to="/">
+                  <h1 className={`home-tab ${activeHome}`}>Home</h1>
+                </Link>
+                <Link className="link" to="/shelf">
+                  <h1 className={`bookshelves-tab ${activeShelves}`}>
+                    Bookshelves
+                  </h1>
+                </Link>
+                <Link className="link" to="/favorite">
+                  <h1 className={`bookshelves-tab ${activeFavorite}`}>
+                    MyFavorites
+                  </h1>
+                </Link>
+              </div>
+              <div className="header-navbar-tabs-container">
+                <button
+                  onClick={this.onClickLogout}
+                  className="logout-btn"
+                  type="button"
+                >
+                  Logout
+                </button>
+                <button
+                  onClick={this.onClickCross}
+                  className="cross-icon-btn"
+                  type="button"
+                >
+                  <RiCloseCircleFill className="cross-icon" />
+                </button>
+              </div>
+            </>
           )}
         </div>
       </div>

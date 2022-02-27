@@ -182,3 +182,15 @@
     line-height: 32px;
   }
 }
+.favorite-icon-book-details {
+  width: 24px;
+  height: 24px;
+  margin-left: 12px;
+  opacity: 0.5;
+}
+.favorite-icon-book-details-selected {
+  width: 24px;
+  height: 24px;
+  margin-left: 12px;
+  color: red;
+}
